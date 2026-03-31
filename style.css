@@ -1,0 +1,114 @@
+/* Body and Background */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: linear-gradient(135deg, #e0f7fa, #f0f8ff);
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  min-height: 100vh;
+  padding: 40px 10px;
+}
+
+/* Card Container */
+.card {
+  background: #ffffff;
+  padding: 30px 25px;
+  max-width: 400px;
+  width: 100%;
+  border-radius: 20px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 35px rgba(0,0,0,0.15);
+}
+
+/* Title */
+h1 {
+  text-align: center;
+  color: #00796b;
+  margin-bottom: 25px;
+}
+
+/* Labels */
+label {
+  font-weight: bold;
+  margin-bottom: 6px;
+  display: block;
+  color: #333;
+}
+
+/* Inputs and Selects */
+input, select {
+  width: 100%;
+  padding: 12px 10px;
+  margin-bottom: 15px;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+  transition: 0.3s;
+}
+
+input:focus, select:focus {
+  border-color: #00796b;
+  box-shadow: 0 0 6px rgba(0, 121, 107, 0.3);
+  outline: none;
+}
+
+/* Button */
+button {
+  width: 100%;
+  padding: 14px;
+  background-color: #00796b;
+  color: white;
+  font-weight: bold;
+  font-size: 16px;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  background-color: #004d40;
+  transform: translateY(-2px) scale(1.02);
+}
+
+/* Converted value display with fade-in */
+.converted-value {
+  margin-top: 20px;
+  text-align: center;
+  font-weight: bold;
+  font-size: 18px;
+  color: #00796b;
+  opacity: 0;
+  transform: translateY(-10px);
+  transition: all 0.4s ease;
+}
+
+.converted-value.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.converted-value.hide {
+  opacity: 0;
+  transform: translateY(-10px);
+}
+
+/* Responsive adjustments */
+@media(max-width: 420px){
+  .card {
+    padding: 20px;
+  }
+  input, select, button {
+    font-size: 15px;
+    padding: 10px;
+  }
+}
