@@ -42,7 +42,7 @@ convertBtn.addEventListener('click', async () => {
     const data = await res.json();
     resultDiv.textContent = `${amount} ${from} = ${data.rates[to]} ${to}`;
 
-    // Add animation class
+   
     resultDiv.classList.remove('hide');
     resultDiv.classList.add('show');
   } catch (err) {
