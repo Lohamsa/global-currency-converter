@@ -1,4 +1,4 @@
-/* Body and Background */
+
 body {
   margin: 0;
   font-family: Arial, sans-serif;
@@ -10,7 +10,7 @@ body {
   padding: 40px 10px;
 }
 
-/* Card Container */
+
 .card {
   background: #ffffff;
   padding: 30px 25px;
@@ -29,14 +29,14 @@ body {
   box-shadow: 0 15px 35px rgba(0,0,0,0.15);
 }
 
-/* Title */
+
 h1 {
   text-align: center;
   color: #00796b;
   margin-bottom: 25px;
 }
 
-/* Labels */
+
 label {
   font-weight: bold;
   margin-bottom: 6px;
@@ -44,7 +44,6 @@ label {
   color: #333;
 }
 
-/* Inputs and Selects */
 input, select {
   width: 100%;
   padding: 12px 10px;
@@ -61,7 +60,7 @@ input:focus, select:focus {
   outline: none;
 }
 
-/* Button */
+
 button {
   width: 100%;
   padding: 14px;
@@ -80,7 +79,7 @@ button:hover {
   transform: translateY(-2px) scale(1.02);
 }
 
-/* Converted value display with fade-in */
+
 .converted-value {
   margin-top: 20px;
   text-align: center;
@@ -102,7 +101,7 @@ button:hover {
   transform: translateY(-10px);
 }
 
-/* Responsive adjustments */
+
 @media(max-width: 420px){
   .card {
     padding: 20px;
