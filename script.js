@@ -1,11 +1,11 @@
 
 const amountInput = document.getElementById('amount');
-const fromSelect = document.getElementById('baseCurrency');    // fixed ID
-const toSelect = document.getElementById('targetCurrency');   // fixed ID
+const fromSelect = document.getElementById('baseCurrency');   
+const toSelect = document.getElementById('targetCurrency');  
 const convertBtn = document.getElementById('convertBtn');
-const resultDiv = document.getElementById('convertedValue');  // fixed ID
+const resultDiv = document.getElementById('convertedValue');  
 
-// Load currencies into dropdowns
+
 async function loadCurrencies() {
   try {
     const res = await fetch('https://api.frankfurter.app/currencies');
@@ -23,10 +23,10 @@ async function loadCurrencies() {
   }
 }
 
-// Call function to populate dropdowns
+
 loadCurrencies();
 
-// Convert currency on button click
+
 convertBtn.addEventListener('click', async () => {
   const amount = amountInput.value;
   const from = fromSelect.value;
