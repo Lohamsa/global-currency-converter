@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # 🌍 Global Currency Converter / Travel Budgeter
 
 A web application that allows users to convert a base currency into multiple target currencies in real-time. Optional features include viewing historical 7-day conversion rates and saving favorite conversions for travel planning or budgeting purposes. This project demonstrates API integration, dynamic UI updates, and React skills, and is beginner-friendly and portfolio-worthy.
@@ -37,3 +38,6 @@ We will use the **Frankfurter API** for currency conversion data. The API endpoi
 1. **Clone repository:**  
 ```bash
 git clone https://github.com/Lohamsa/global-currency-converter.git
+=======
+# global-currency-converter
+>>>>>>> 327ac83 (Initial commit)
