@@ -16,8 +16,7 @@ let targetCurrency = "INR";
 let activeSelection = "from";
 
 const popular = ["USD", "INR", "EUR", "GBP", "JPY"];
-
-
+// this is the async function to fetch data 
 async function loadCurrencies() {
   const res = await fetch("https://open.er-api.com/v6/latest/USD");
   const data = await res.json();
