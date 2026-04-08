@@ -2,28 +2,54 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Currency Converter</title>
+  <title>Currency Dashboard</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div class="card">
-    <h1>Currency Converter</h1>
 
-    <label for="amount">Amount:</label>
-    <input type="number" id="amount" placeholder="Enter amount" value="1">
+<header class="header">
+  <h2>💱 Currency Dashboard</h2>
+</header>
 
-    <h3>Base Currency</h3>
-    <select id="baseCurrency"></select>
+<div class="layout">
 
-    <h3>Target Currency</h3>
-    <select id="targetCurrency"></select>
+  <div class="sidebar">
+    <h3>🌍 Currencies</h3>
+
+    <input type="text" id="searchCurrency" placeholder="Search...">
+    <button id="filterBtn">Show Popular</button>
+
+    <ul id="currencyList"></ul>
+  </div>
+
+  <div class="main">
+
+    <div class="top-bar">
+      <button id="themeBtn" class="toggle-btn">🌙</button>
+    </div>
+
+    <h3>💱 Convert Currency</h3>
+
+    <input type="number" id="amount" value="1">
+
+ 
+    <div class="selection">
+      <div id="fromBox" class="select-box active">
+        FROM: <span id="baseText">USD</span>
+      </div>
+      <div id="toBox" class="select-box">
+        TO: <span id="targetText">INR</span>
+      </div>
+    </div>
 
     <button id="convertBtn">Convert</button>
 
-    <p class="converted-value" id="convertedValue"></p>
+    <h2 id="result"></h2>
+
   </div>
 
-  <script src="script.js"></script>
+</div>
+
+<script src="script.js" defer></script>
 </body>
 </html>
